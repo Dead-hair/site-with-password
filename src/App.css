@@ -1,0 +1,168 @@
+/* Общие стили */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9; /* Светло-серый фон для легкости */
+  margin: 0;
+  padding: 0;
+  color: #444; /* Тёмный, но не слишком чёрный текст для лучшей читаемости */
+}
+
+h1 {
+  color: #e60000; /* Яркий красный для заголовков */
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 40px 0 20px;
+  letter-spacing: 1px; /* Увеличенный интервал для заголовков */
+}
+
+h3 {
+  color: #ff9800; /* Мягкий оранжевый для подзаголовков */
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #666;
+  line-height: 1.7;
+  text-align: center;
+  margin: 10px 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Навигация */
+nav {
+  background-color: #ffffff; /* Белый фон для навигации */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень для выделения */
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: #333; /* Темный текст */
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out; /* Плавный переход */
+}
+
+nav ul li a:hover {
+  color: #ff9800; /* Оранжевый при наведении */
+}
+
+/* Стиль для контейнера */
+.container {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff; /* Белый фон для контейнера */
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* Гладкая тень */
+  color: #444;
+  max-width: 1000px;
+  transition: box-shadow 0.3s ease; /* Плавный переход для тени */
+}
+
+.container:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); /* Увеличенная тень при наведении */
+}
+
+/* Стиль для полей ввода и кнопок */
+input, button {
+  padding: 14px;
+  margin: 12px 0;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ddd; /* Светлая граница */
+  background-color: #f9f9f9; /* Легкий фон для полей ввода */
+}
+
+input[type="number"] {
+  text-align: center;
+}
+
+button {
+  background-color: #ff9800; /* Мягкий оранжевый фон для кнопок */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Плавные переходы */
+}
+
+button:hover {
+  background-color: #e60000; /* Ярко-красный при наведении */
+  transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Стиль для защищенной страницы */
+.protected-page {
+  background-color: #fff;
+  color: #333;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.protected-page button {
+  background-color: #e60000; /* Ярко-красная кнопка */
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.protected-page button:hover {
+  background-color: #ff9800; /* Желтая кнопка при наведении */
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  input[type="number"], button {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Дополнительные элементы для стилизации */
+input:focus, button:focus {
+  outline: none;
+  box-shadow: 0 0 8px #ff9800; /* Оранжевая рамка при фокусе */
+}
